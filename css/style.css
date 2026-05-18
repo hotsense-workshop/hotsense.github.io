@@ -80,8 +80,8 @@ section {
     padding: 0;
     position: relative;
     overflow: hidden;
-    height: 70vh;
-    min-height: 500px;
+    height: 102vh;
+    min-height: 620px;
     display: flex;
     flex-direction: column;
 }
@@ -427,7 +427,7 @@ section {
 
 @media (max-width: 768px) {
     .hero-section {
-        min-height: 680px;
+        min-height: 700px;
     }
 
     .hero-content {
@@ -447,17 +447,23 @@ section {
     }
 
     .timeline {
-        margin-left: 24px;
+        margin-left: 0;
+        padding-left: 0;
+    }
+    .timeline::before {
+        left: 12px;
     }
     .timeline-item {
         flex-direction: column;
         align-items: flex-start;
         min-height: 0;
+        padding-left: 44px;
     }
     .timeline-marker {
-        margin-bottom: 0.5rem;
-        margin-right: 12px;
-        left: -6px;
+        position: absolute;
+        top: 0.15rem;
+        left: 2px;
+        margin: 0;
     }
     .timeline-item .date {
         width: 100%;
